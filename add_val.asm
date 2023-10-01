@@ -1,0 +1,18 @@
+.MODEL SMALL
+.STACK 100H
+
+.DATA
+
+.CODE
+    MAIN PROC
+    MOV AX, @DATA
+    MOV DS, AX
+
+    ;Code Here
+
+    MOV AX 0x10
+    MOV BX 0x20
+    ADD AX, BX
+
+    MAIN ENDP
+END MAIN
